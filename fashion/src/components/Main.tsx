@@ -3,9 +3,7 @@ import WelcomingSection from './welcome'
 import Item from "../components/Items"
 
 
-
 function WelcomingPage() {
-
 
 
 
