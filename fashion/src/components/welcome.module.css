@@ -1,0 +1,104 @@
+.welcomingSection {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.fashiologoBox {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    position: relative;
+}
+
+.describeText {
+    font-family: "DM Serif Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 0;
+    margin-left: 10px;
+
+}
+
+.fashionlogo {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    margin-left: 10px;
+
+}
+
+.rightPhotos {
+    position: relative;
+    width: 800px;
+    height: 750px;
+
+}
+
+.rightPhoto {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    right: 40px;
+    box-shadow: 0px 0px 85px -22px #4f4f4f;
+}
+
+
+.leftPhoto {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 250px;
+    right: 500px;
+    box-shadow: 0px 0px 85px -22px rgba(79, 79, 79, 1);
+
+}
+
+.rightPhoto:hover,
+.leftPhoto:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 95px -5px #4f4f4f;
+    width: 380px;
+    height: 580px;
+    /* Smooth transition */
+    transition: all 0.5s ease-in-out;
+
+}
+
+.newCollections {
+    font-family: "Montserrat Subrayada", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #d9d3d33b;
+
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border: solid 4px rgb(153, 149, 149);
+    border-radius: 4px;
+}
+
+
+.buttons {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
