@@ -9,8 +9,8 @@ async function fetchItems() {
 
 
     if (error) {
-        console.error('Error fetching users:', error);
-        return;
+        throw new Error('Error fetching Items');
+
     }
 
     return data
