@@ -1,5 +1,5 @@
 
-import styles from './welcome.module.css'
+import styles from './Item.module.css'
 
 
 type User = {
@@ -8,8 +8,8 @@ type User = {
     price: string;
     photo: string
 }
-const Item: React.FC<{ fashionData: User }> = ({ fashionData }) => {
 
+const Item: React.FC<{ fashionData: User }> = ({ fashionData }) => {
 
     return <>
         <div className={styles.item}>
@@ -22,7 +22,6 @@ const Item: React.FC<{ fashionData: User }> = ({ fashionData }) => {
                 <button className={styles.addRemoveButtons}>+</button>
             </div>
         </div>
-
     </>
 }
 

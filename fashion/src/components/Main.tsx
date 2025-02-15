@@ -5,17 +5,19 @@ import styles from './welcome.module.css'
 
 
 import WelcomingSection from './welcome'
-import Item from "../components/Items"
+import Item from "./Item"
 
 
 function WelcomingPage() {
 
     const { data, error, isPending, isError } = useQuery({
         queryKey: ['homeItems'],
-        queryFn: fetchItems,
+        queryFn: () => fetchItems({ itemsInfo: 'fashions' }),
         gcTime: 1000 * 60 * 10,
 
     })
+    console.log(data);
+
 
     let content
 

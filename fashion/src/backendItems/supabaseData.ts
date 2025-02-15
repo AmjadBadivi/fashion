@@ -1,10 +1,24 @@
 import { supabase } from "./supabaseBackend";
 
 
-async function fetchItems() {
+async function fetchItems({ itemsInfo }: { itemsInfo: string }) {
+    console.log(itemsInfo);
+
+    // let itemData: string = "";
+    // if (itemsInfo === "allData") {
+    //     itemData = "fashions";
+    // } else if (itemsInfo === "men") {
+    //     itemData = "men";
+    // } else if (itemsInfo === "women") {
+    //     itemData = "women";
+    // } else {
+    //     console.error("Invalid itemsInfo provided:", itemsInfo);
+    //     throw new Error("Invalid itemsInfo provided");
+    // }
+
 
     let { data, error } = await supabase
-        .from('fashions')
+        .from(itemsInfo)
         .select('*')
 
 
