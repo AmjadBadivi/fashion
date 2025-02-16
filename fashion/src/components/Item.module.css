@@ -7,7 +7,7 @@
 }
 
 .countItem {
-    background-color: #bdb9b987;
+    background-color: #d9d3d33b;
     padding: 4px;
     border-radius: 2px;
 }
@@ -37,6 +37,17 @@
 
 .addRemoveButtons {
     background-color: #9d9797;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 6px 20px;
+    border: 0;
+}
+
+.disabledButton {
+    background-color: #efbebe;
     border-radius: 30px;
     cursor: pointer;
     color: #ffffff;

@@ -2,7 +2,6 @@ import { supabase } from "./supabaseBackend";
 
 
 async function fetchItems({ itemsInfo }: { itemsInfo: string }) {
-    console.log(itemsInfo);
 
     // let itemData: string = "";
     // if (itemsInfo === "allData") {

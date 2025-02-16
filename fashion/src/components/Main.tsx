@@ -16,7 +16,9 @@ function WelcomingPage() {
         gcTime: 1000 * 60 * 10,
 
     })
-    console.log(data);
+
+
+
 
 
     let content
@@ -36,6 +38,7 @@ function WelcomingPage() {
 
 
 export default WelcomingPage
+
 
 
 

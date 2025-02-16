@@ -12,7 +12,7 @@ function Navbar() {
                 <NavLink to={'/men'} className={style.menWomen}>Men</NavLink>
                 <NavLink to={'/women'} className={style.menWomen}>Women</NavLink>
             </div>
-            <img src={x} alt="Cart" style={{ width: '40px', height: '40px' }} />
+            <NavLink to={'/cart'} ><img src={x} alt="Cart" style={{ width: '40px', height: '40px' }} /></NavLink>
         </div>
     </>
 }
