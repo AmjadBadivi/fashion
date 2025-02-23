@@ -10,7 +10,7 @@ import Item from "./Item"
 
 function WelcomingPage() {
 
-    const { data, error, isPending, isError } = useQuery({
+    const { data, isPending } = useQuery({
         queryKey: ['homeItems'],
         queryFn: () => fetchItems({ itemsInfo: 'fashions' }),
         gcTime: 1000 * 60 * 10,

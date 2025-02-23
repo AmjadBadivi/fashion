@@ -3,13 +3,11 @@ import { useQuery } from "@tanstack/react-query"
 import fetchItems from "../backendItems/supabaseData"
 import Item from "./Item"
 import styles from './Menitems.module.css'
-import { RootState, AppDispatch } from "../backendItems/reduxItems";
 
-import { useDispatch, useSelector } from "react-redux";
 
 function MenItems() {
 
-    const { data, error, isPending, isError } = useQuery({
+    const { data, isPending, } = useQuery({
         queryKey: ['men'],
         queryFn: () => fetchItems({ itemsInfo: 'men' }),
         gcTime: 1000 * 60 * 10,
@@ -17,7 +15,6 @@ function MenItems() {
     })
 
 
-    const items = useSelector((state: RootState) => state.array.items);
 
 
 
