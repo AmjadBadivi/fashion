@@ -7,7 +7,7 @@ import styles from './WomenItems.module.css'
 
 function WomenItems() {
 
-    const { data, error, isPending, isError } = useQuery({
+    const { data, isPending } = useQuery({
         queryKey: ['men'],
         queryFn: () => fetchItems({ itemsInfo: 'women' }),
         gcTime: 1000 * 60 * 10,
