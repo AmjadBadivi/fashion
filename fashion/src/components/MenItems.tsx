@@ -20,21 +20,22 @@ function MenItems() {
     const items = useSelector((state: RootState) => state.array.items);
 
 
-    console.log(items)
 
     let content
 
     if (isPending) { content = <h2>Loading Data...</h2> }
     if (data) {
         content = data.map(e => <Item key={e.id} fashionData={e}></Item>)
+
+
     }
 
 
     return <>
-
-        <h2>New MEN Collections</h2>
-        <div className={styles.itemsBox}>{content}</div>
-
+        <div className={styles.menCollection}>
+            <h2>New MEN Collections</h2>
+            <div className={styles.itemsBox}>{content}</div>
+        </div>
     </>
 
 

@@ -23,8 +23,10 @@ function WomenItems() {
 
 
     return <>
-        <h2>New WOMEN Collections</h2>
-        <div className={styles.itemsBox}>{content}</div>
+        <div className={styles.womenCollection}>
+            <h2>New WOMEN Collections</h2>
+            <div className={styles.itemsBox}>{content}</div>
+        </div>
     </>
 
 
