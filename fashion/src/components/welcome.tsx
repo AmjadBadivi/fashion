@@ -21,7 +21,7 @@ function WelcomingSection() {
             </div>
         </div>
         <h1 className={styles.newCollections}>NEW COLLECTIONS</h1>
-        <div></div>
+
     </>
 }
 
